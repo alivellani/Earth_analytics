@@ -4,8 +4,7 @@
 # - You can use any programming language you like.
 # - The function you submit shall be runnable. *
 
-#from unittest import result
-
+#create global memeory to retain information
 temp = {0: 0, 1: 1}
 
 def calc_fib(n):
@@ -14,7 +13,7 @@ def calc_fib(n):
      if n in temp:  
          return temp[n]
      
-     # recursive
+     # repeat
      temp[n] = calc_fib(n - 1) + calc_fib(n - 2)  
      return temp[n]
 

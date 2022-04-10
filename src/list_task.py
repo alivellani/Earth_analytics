@@ -37,6 +37,6 @@ def func(org,add,rem):
     # remove del from added list
     res = [x for x in res if x not in rem]
     
-    # sort the list size of elements   
+    # sort the list size of elements and incase of tie, by reverse alphabetical order
     return sorted(res, key=lambda ele: (len(ele), ele), reverse=True)
 
